@@ -1,9 +1,11 @@
 package dto;
 
 public class LibmapDTO {
-	private String mart;
-	private String p_num;
-	private String area;
+	private String mart;//상호명
+	private String area;//한식중식일식
+	private String middlecategory;// 중분류
+	private String subdivision; // 소분류
+	private String dong;//동
 	private String address;
 	private String latitude;
 	private String longitude;
@@ -20,20 +22,13 @@ public class LibmapDTO {
 		this.mart = mart;
 	}
 
-	public String getP_num() {
-		return p_num;
-	}
-
-	public void setP_num(String p_num) {
-		this.p_num = p_num;
-	}
 
 	public String getArea() {
-		return area;
+		return area; //키워드
 	}
 
 	public void setArea(String area) {
-		this.area = area;
+		this.area = area; //키워드
 	}
 
 	public String getAddress() {
@@ -58,6 +53,30 @@ public class LibmapDTO {
 
 	public void setLongitude(String longitude) {
 		this.longitude = longitude;
+	}
+
+	public String getMiddlecategory() {
+		return middlecategory;
+	}
+
+	public void setMiddlecategory(String middlecategory) {
+		this.middlecategory = middlecategory;
+	}
+
+	public String getSubdivision() {
+		return subdivision;
+	}
+
+	public void setSubdivision(String subdivision) {
+		this.subdivision = subdivision;
+	}
+
+	public String getDong() {
+		return dong;
+	}
+
+	public void setDong(String dong) {
+		this.dong = dong;
 	}
 	
 	

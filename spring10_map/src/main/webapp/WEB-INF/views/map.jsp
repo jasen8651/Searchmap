@@ -5,16 +5,17 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-<link rel="stylesheet" href="map/map.css">
+
 <script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=903a4aeed7d052f1bba36783e3f8632e"></script>
-	
+<script defer src="map/map.js"></script>
+<link rel="stylesheet" href="map/map.css">
 </head>
 <body>
 	<div class="map_wrap">
 		<div id="map"
-			style="width: 100%; height: 100%; position: relative; overflow: hidden;"></div>
+			style="width: 100%; height: 100vh; position: relative; overflow: hidden;"></div>
 
 		<!-- 지도타입 컨트롤 div 입니다 -->
 		<div class="custom_typecontrol radius_border">
@@ -45,6 +46,6 @@
 			<div id="pagination"></div>
 		</div>
 	</div>
-	<script src="map/map.js"></script>
+	
 </body>
 </html>

@@ -32,7 +32,7 @@ public class MapController {
 	}
 	
 	
-	//@ResponseBody
+	@ResponseBody
 	@RequestMapping(value="/libmap.do", method=RequestMethod.POST )
 	public ModelAndView libraryMap(int pageNo, int pageSize, String keyword, ModelAndView mav) {
 		int countAll = service.f_countAllProcess(keyword);

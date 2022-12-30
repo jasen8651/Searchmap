@@ -214,7 +214,7 @@ function getListItem(index, search, marker) {
 		itemStr += '<span>' + search.address + '</span>';
 	}
 
-	itemStr += '<span class="tel">' + search.p_num + '</span>'
+	itemStr += '<span class="tel">' + search.middlecategory + '</span>'
 			+ '</div>';
 
 	el.innerHTML = itemStr;

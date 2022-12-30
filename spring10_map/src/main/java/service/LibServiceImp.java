@@ -22,7 +22,7 @@ public class LibServiceImp  implements LibService{
 		HashMap<String, Object> map = new HashMap<String, Object>();
 		map.put("startpage", ((pageNo - 1) * pageSize)+1);
 		map.put("endpage", pageNo * pageSize);
-		map.put("keyword", keyword);
+		map.put("keyword", keyword); //키워드
 		return dao.lib_list(map);
 	}
 
